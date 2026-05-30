@@ -1,0 +1,34 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Raw / processed data (large, reproducible via pipeline)
+data/raw/
+data/processed/
+
+# Secrets — never commit
+.env
+.env.*
+*.env
+
+# Test fixtures (real data, regenerated on first test run)
+tests/fixtures/
+
+# Fine-tuned model checkpoints (large binaries — run finetune_chronos.py to regenerate)
+models/
+
+# Local-only documents (not for the repo)
+INTERPRETATION.md
+resume_bullets.md
+
+# Evaluation logs and intermediate outputs
+data/*.txt
+data/*.csv
+data/*.parquet
